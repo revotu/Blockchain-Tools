@@ -38,7 +38,7 @@ b'hello world'
 >>> import base58
 >>> base58.b58decode_check(b'3vQB7B6MrGQZaxCuFg4oh')
 b'hello world'
->>> base58.b58decode_check(b'3vQB7B6MrGQZaxCuFg4oH')
+>>> base58.b58decode_check(b'3vQB7B6MrGQZaxCuFg4oH')            #  校验和验证不通过，则报错
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/Users/bin/python3.6/site-packages/base58.py", line 120, in b58decode_check
