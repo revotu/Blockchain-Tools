@@ -44,7 +44,6 @@ Traceback (most recent call last):
   File "/Users/bin/python3.6/site-packages/base58.py", line 120, in b58decode_check
     raise ValueError("Invalid checksum")
 ValueError: Invalid checksum
->>> 
 ```
 
 
