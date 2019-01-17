@@ -23,3 +23,27 @@ b'StV1DL6CwTryKyV'
 >>> base58.b58decode(b'StV1DL6CwTryKyV')
 b'hello world'
 ```
+
+## base64
+
+### 安装
+
+```
+base64是内置库，无需安装
+```
+
+### base64编码
+
+```
+>>> import base64
+>>> base64.b64encode(b'hello world')
+b'aGVsbG8gd29ybGQ='
+```
+
+### base64解码
+
+```
+>>> import base64
+>>> base64.b64decode(b'aGVsbG8gd29ybGQ=')
+b'hello world'
+```
