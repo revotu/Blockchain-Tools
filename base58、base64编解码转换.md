@@ -41,7 +41,7 @@ b'hello world'
 >>> base58.b58decode_check(b'3vQB7B6MrGQZaxCuFg4oH')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "/Users/revotu/dev/vee/env-vee/lib/python3.6/site-packages/base58.py", line 120, in b58decode_check
+  File "/Users/bin/python3.6/site-packages/base58.py", line 120, in b58decode_check
     raise ValueError("Invalid checksum")
 ValueError: Invalid checksum
 >>> 
