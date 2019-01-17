@@ -8,12 +8,18 @@
 pip install base58
 ```
 
-### base58编解码
+### base58编码
 
 ```
 >>> import base58
 >>> base58.b58encode(b'hello world')
 b'StV1DL6CwTryKyV'
+```
+
+### base58解码
+
+```
+>>> import base58
 >>> base58.b58decode(b'StV1DL6CwTryKyV')
 b'hello world'
 ```
