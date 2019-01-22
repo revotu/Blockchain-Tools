@@ -1,4 +1,4 @@
-# base58、base64编解码转换
+# base58、base64等常见编解码转换
 
 ## base58
 
@@ -69,4 +69,33 @@ b'aGVsbG8gd29ybGQ='
 >>> import base64
 >>> base64.b64decode(b'aGVsbG8gd29ybGQ=')
 b'hello world'
+```
+
+
+## binascii
+
+### 安装
+
+```
+binascii是内置库，无需安装
+```
+
+### 十六进制字符串转字节（hex -> bytes）
+
+```
+>>> import binascii
+>>> binascii.a2b_hex('000102030405060708090a0b0c0d0e0f')
+b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f'
+>>> binascii.a2b_hex(b'000102030405060708090a0b0c0d0e0f')
+b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f'
+```
+
+
+### 字节转十六进制字符串（bytes -> hex）
+
+```
+>>> binascii.b2a_hex(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+b'000102030405060708090a0b0c0d0e0f'
+>>> binascii.b2a_hex(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f').decode('utf8')
+'000102030405060708090a0b0c0d0e0f'
 ```
